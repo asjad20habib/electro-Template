@@ -1,0 +1,22 @@
+Guest:
+session_cart = { 1: 2, 3:1 }  # product_id => quantity
+Display:
+loop session_cart:
+    get product details from DB
+    show quantity, price, name, image
+
+Logged in:
+db_cart = table: user_id | product_id | quantity
+Display:
+select product info from products join db_cart on product_id
+
+
+
+
+IF cart exists:
+    IF product already in cart:
+        qty++
+    ELSE:
+        add product_id with qty = 1
+ELSE:
+    create cart

@@ -1,0 +1,133 @@
+UI (Search / Category Select)
+        ↓
+Request (selected category id)
+        ↓
+Backend Logic (decision + filter)
+        ↓
+Database (products filtered by category_id)
+        ↓
+Response (filtered products)
+        ↓
+UI (render cards)
+
+
+
+
+
+
+
+
+
+Category select
+→ category_id milti hai
+→ PHP ko bhejni hai
+→ products wapas aate hain
+→ cards update hotay hain
+
+
+
+
+when page loads
+
+select category dropdown
+
+listen for change event
+
+get selected category value
+
+if category is “all”
+
+load all products
+
+else
+
+send category id to server using AJAX
+
+wait for response
+
+if products exist
+
+update UI
+
+else
+
+show “no products
+
+
+
+
+
+Page load hota
+
+User dropdown change karta
+
+Browser:
+
+selected category ki value uthata
+
+Ye value:
+
+request ke saath backend ko bheji jati
+
+Backend:
+
+us category ke data ke hisaab se response deta
+
+Frontend:
+
+response ko UI mein show karta
+
+
+
+
+1. User Order Now click karta hai
+2. Checkout page open hoti hai (product ID ke sath)
+3. Server product verify karta hai
+4. User form fill karta hai
+5. Form submit hota hai
+6. Server:
+     - Product verify
+     - Price calculate
+     - Stock check
+     - Order save (status = Pending)
+7. Confirmation page show hoti hai
+
+
+
+
+
+User “Buy Now” click karta hai
+↓
+JS backend se product data fetch karta hai
+↓
+UI checkout mode me switch hoti hai
+↓
+User form fill karta hai
+↓
+JS order backend ko POST karta hai
+↓
+Success message show hota hai
+
+Bas. Yehi core loop hai.
+
+
+
+
+
+
+
+Single HTML page
+↓
+User “Buy Now” click karta hai
+↓
+JS backend se product data fetch karta hai
+↓
+UI checkout mode me switch hoti hai
+↓
+User form fill karta hai
+↓
+JS order backend ko POST karta hai
+↓
+Success message show hota hai
+
+Bas. Yehi core loop hai

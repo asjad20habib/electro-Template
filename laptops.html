@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops</title>
+
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/laptops.css"> <!-- Your CSS file -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+
+<!-- ✅ NAVBAR SAME AS OTHER PAGES -->
+<!-- If you're not using PHP, just paste your navbar HTML here -->
+<!-- ✅ HERO SECTION (same as hot deals, just text changed) -->
+<section class="laptops-section container">
+      <h2 class="section-title">Our Latest smartphone</h2>
+       <div class="col-md-6 col-12 d-flex justify-content-center mb-2 mb-md-0">
+          <div class="search d-flex w-100 justify-content-center">
+            <select class="category-select" id="select">
+              <option>All Categories</option>
+              <option>smartphones</option>
+              <option>Smartphones</option>
+              <option>Accessories</option>
+              <option>Cameras</option>
+            </select>
+            <input type="text" class="input" id="tab" placeholder="Search here..." />
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+
+
+<!-- place this HTML where your slider should be -->
+<section class="product-slider swiper">
+  <!-- Swiper wrapper + keep your products-grid class so your CSS still applies -->
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product01.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">LAPTOP</p>
+          <h3>Power Laptop X1</h3>
+              <!-- OVERVIEW TEXT -->
+                      <!-- OVERVIEW TEXT -->
+            <div class="product-overview" style="display:none;">
+                  This laptop is perfect for office work, browsing, coding and multitasking.
+                  It comes with a slim design and long battery backup perfect for students.
+            </div>
+
+            <div class="product-description" style="display:none;">
+               • Processor: Intel i7 11th Gen  
+               • RAM: 16GB DDR4  
+                • Storage: 512GB NVMe SSD  
+                 • Graphics: Intel Iris Xe  
+                • Display: 15.6" FHD IPS  
+                 • Battery: 6–7 Hours  
+            </div>
+          <div class="price">
+            <span class="new-price">$980.00</span>
+            <span class="old-price">$990.00</span>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="product-actions">
+          <a href="#" class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+          <div class="toast">Added to Compare</div>
+          <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+          <a href="index2.html" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+        </div>
+        <div class="add-to-cart">
+          <button>
+            <div class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              <span class="cartCount">0</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat swiper-slide blocks for other products -->
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product02.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">SMARTPHONE</p>
+          <h3>Galaxy A52</h3>
+            <div class="product-overview" style="display:none;">
+                The Galaxy A52 combines modern design with powerful performance. 
+                Its stunning Super AMOLED display, versatile quad-camera setup, and long-lasting battery 
+                make it an excellent choice for entertainment lovers, gamers, and casual photographers. 
+                Whether you stream, game, or multitask, the A52 delivers a smooth, premium experience.
+            </div>
+              <div class="product-description" style="display:none;">
+                    • Processor: Qualcomm Snapdragon 720G  
+                    • RAM: 8GB  
+                    • Storage: 256GB (expandable via microSD)  
+                    • Display: 6.5" Super AMOLED 90Hz  
+                    • Camera: 64MP Quad-Camera + 32MP Selfie  
+                    • Battery: 4500mAh with 25W fast charging  
+                    • Security: In-display Fingerprint Sensor  
+                    • Water Resistance: IP67 Dust + Water Resistant  
+            </div>
+          <div class="price">
+            <span class="new-price">$850.00</span>
+            <span class="old-price">$890.00</span>
+          </div>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <div class="product-actions">
+          <a href="#" class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+          <div class="toast">Added to Compare</div>
+          <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+          <a href="index2.html" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+        </div>
+        <div class="add-to-cart">
+          <button>
+            <div class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              <span class="cartCount">0</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product03.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">CAMERA</p>
+          <h3>Canon Pro Z</h3>
+            <div class="product-overview" style="display:none;">
+              The Canon Pro Z is built for photographers who demand exceptional clarity and 
+              professional-grade performance. With advanced image stabilization, fast autofocus, 
+              and a high-resolution sensor, this camera allows you to capture breathtaking detail 
+              even in challenging lighting conditions. Ideal for traveling, studio work, and 
+              professional content creation.
+            </div>
+            <div class="product-description" style="display:none;">
+                • Sensor: 24.2MP APS-C CMOS Sensor  
+                • Lens Mount: Canon EF/EF-S  
+                • Video: 4K UHD Recording  
+                • ISO: 100–25600 (expandable)  
+                • Autofocus: Dual Pixel AF Technology  
+                • Connectivity: Wi-Fi + Bluetooth  
+                • Screen: 3.0" Vari-Angle Touchscreen  
+                • Battery Life: 700 shots per charge  
+            </div>
+          <div class="price">
+            <span class="new-price">$660.00</span>
+            <span class="old-price">$799.00</span>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="product-actions">
+          <a href="#" class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+          <div class="toast">Added to Compare</div>
+          <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+          <a href="index2.html" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+        </div>
+        <div class="add-to-cart">
+          <button>
+            <div class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              <span class="cartCount">0</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product03.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">CAMERA</p>
+          <h3>Canon Pro Z</h3>
+            <div class="product-overview" style="display:none;">
+              The Canon Pro Z is built for photographers who demand exceptional clarity and 
+              professional-grade performance. With advanced image stabilization, fast autofocus, 
+              and a high-resolution sensor, this camera allows you to capture breathtaking detail 
+              even in challenging lighting conditions. Ideal for traveling, studio work, and 
+              professional content creation.
+            </div>
+            <div class="product-description" style="display:none;">
+              • Sensor: 24.2MP APS-C CMOS Sensor  
+              • Lens Mount: Canon EF/EF-S  
+              • Video: 4K UHD Recording  
+              • ISO: 100–25600 (expandable)  
+              • Autofocus: Dual Pixel AF Technology  
+              • Connectivity: Wi-Fi + Bluetooth  
+               • Screen: 3.0" Vari-Angle Touchscreen  
+              • Battery Life: 700 shots per charge  
+            </div>
+          <div class="price">
+            <span class="new-price">$660.00</span>
+            <span class="old-price">$799.00</span>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+        <div class="product-actions">
+          <a href="#" class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+          <div class="toast">Added to Compare</div>
+          <!-- <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a> -->
+           <a href="#" class="compare-btn"><i class="fa-solid fa-right-left"></i></a>
+          <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+        </div>
+        <div class="add-to-cart">
+          <button>
+            <div class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              <span class="cartCount">0</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+
+      <div class= "product-slider-buttons">
+        <button class="slick-prev slick-arrow" aria-label="Previous" type="button">&#10094;</button>
+        <button class="slick-next slick-arrow" aria-label="Next" type="button">&#10095;</button>
+     </div>
+  
+</section>
+
+<!-- include Swiper JS near end of body (once) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- your existing scripts: keep DOM ready and init after Swiper loaded -->
+
+
+
+</style>
+<body>
+
+
+<!-- Quick view modal -->
+<div id="quickViewModal" class="quick-view-modal" aria-hidden="true">
+  <div class="quick-view-content" role="dialog" aria-modal="true">
+    <button class="quick-view-close" aria-label="Close">&times;</button>
+
+    <div class="quick-view-left">
+      <img id="qv-img" src="" alt="Product image">
+    </div>
+
+    <div class="quick-view-right">
+      <p id="qv-category" class="qv-category"></p>
+      <h3 id="qv-title" class="qv-title"></h3>
+      <div class="qv-price"><span id="qv-new" class="new-price"></span> <span id="qv-old" class="old-price"></span></div>
+      <div id="qv-rating" class="qv-rating"></div>
+
+      <h4>Overview</h4>
+      <p id="qv-desc" class="qv-desc"></p>
+
+      <h4>Specifications</h4>
+      <p id="qv-specs" class="qv-specs"></p>
+
+      <div class="qv-actions">
+        <button class="qv-btn add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="qv-btn buy-now"><i class="fa-solid fa-bolt"></i> Buy Now</button>
+      </div>
+
+      <span id="readMoreBtn" class="read-more">Read More</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<script src="scriptSmartphone.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

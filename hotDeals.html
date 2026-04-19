@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/electro-Template/css/hotDeals.css">
+      <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  </head>
+<body>
+
+<section class="showcase-hero">
+  <div class="hero-content">
+    <h1>Hot Deals of The Week</h1>
+    <p>Premium Collection • Top Rated Products • Limited Time Offers</p>
+    <button class="hero-btn">Shop Now</button>
+  </div>
+</section>
+<!-- product -->
+<!-- Add Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<div class="swiper product-slider">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product01.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">LAPTOP</p>
+          <h3>Power Laptop X1</h3>
+          <div class="price">
+            <span class="new-price">$980.00</span>
+            <span class="old-price">$990.00</span>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>     
+       <div class="product-actions">
+            <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+            <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+      </div>
+        <div class="add-to-cart">
+          <button>
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product02.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">SMARTPHONE</p>
+          <h3>Galaxy A52</h3>
+          <div class="price">
+            <span class="new-price">$850.00</span>
+            <span class="old-price">$890.00</span>
+          </div>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <div class="product-actions">
+            <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+            <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+      </div>
+        <div class="add-to-cart">
+          <button>
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product03.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">CAMERA</p>
+          <h3>Canon Pro Z</h3>
+          <div class="price">
+            <span class="new-price">$660.00</span>
+            <span class="old-price">$799.00</span>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+          <div class="product-actions">
+            <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+            <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+        </div>  
+        <div class="add-to-cart">
+          <button>
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://preview.colorlib.com/theme/electro/img/product04.png.webp" alt="Product">
+        </div>
+        <div class="product-body">
+          <p class="category">ACCESSORIES</p>
+          <h3>Wireless Headset</h3>
+          <div class="price">
+            <span class="new-price">$660.00</span>
+            <span class="old-price">$799.00</span>
+          </div>
+          <div class="rating">★★★★★</div>
+        </div>
+          <div class="product-actions">
+            <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+            <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+            <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        <div class="add-to-cart">
+          <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Buttons -->
+    <div class="product-slider-buttons">
+      <button class="slick-prev slick-arrow" aria-label="Previous" type="button">&#10094;</button>
+      <button class="slick-next slick-arrow" aria-label="Next" type="button">&#10095;</button>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  // helper: clone slides until count >= target (keeps loop smooth)
+  // ensure slides count for nice loop (keep if you need clones)
+  (function ensureSlidesCount(target = 8){
+    const wrapper = document.querySelector('.product-slider .swiper-wrapper');
+    if(!wrapper) 
+    return;
+    const slides = Array.from(wrapper.children);
+    let count = slides.length;
+    if(count >= target) 
+    return;
+    // clone in sequence until target reached
+    let i = 0;
+    while(count < target){
+      const clone = slides[i % slides.length].cloneNode(true);
+      wrapper.appendChild(clone);
+      i++; count++;
+    }
+  })(8);
+
+  // init swiper AFTER possible cloning
+  const swiper = new Swiper('.product-slider', {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    loop: true,
+    speed: 900,
+    watchOverflow: true,    // disables navigation if not needed
+    grabCursor: true,
+    centeredSlides: false,
+    autoplay: {
+      delay: 2400,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+    navigation: {
+      nextEl: '.slick-next',
+      prevEl: '.slick-prev'
+    },
+    keyboard: { enabled: true, onlyInViewport: true },
+    breakpoints: {
+      1400: { slidesPerView: 4, spaceBetween: 28 },
+      1280: { slidesPerView: 4, spaceBetween: 28 }, // keeps 4 on 1280
+      1024: { slidesPerView: 3, spaceBetween: 22 },
+      768:  { slidesPerView: 2, spaceBetween: 18 },
+      0:    { slidesPerView: 1, spaceBetween: 12 }
+    },
+    on: {
+      init() { /* prevents transient jump on some devices */ },
+      resize() { /* nothing special, but keeps responsive */ }
+    }
+  });
+
+
+
+</script>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

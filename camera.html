@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops</title>
+
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/laptops.css"> <!-- Your CSS file -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+<!-- ✅ NAVBAR SAME AS OTHER PAGES -->
+<!-- If you're not using PHP, just paste your navbar HTML here -->
+<!-- ✅ HERO SECTION (same as hot deals, just text changed) -->
+<section class="laptops-section container">
+      <h2 class="section-title">Latest Laptops</h2>
+       <div class="col-md-6 col-12 d-flex justify-content-center mb-2 mb-md-0">
+          <div class="search d-flex w-100 justify-content-center">
+            <select class="category-select" id="select">
+              <option>All Categories</option>
+              <option>Laptops</option>
+              <option>Smartphones</option>
+              <option>Accessories</option>
+              <option>Cameras</option>
+            </select>
+            <input type="text" class="input" id="tab" placeholder="Search here..." />
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+
+
+  <div class="products-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="images/products1.webp" alt="Laptop">
+      </div>
+      <div class="product-body">
+        <p class="category">ACCESSORIES</p>
+        <h3>Wireless Headset</h3>
+        <div class="price">
+          <span class="new-price">$660.00</span>
+          <span class="old-price">$799.00</span>
+        </div>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="product-actions">
+        <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+        <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+      </div>
+      <div class="add-to-cart">
+        <!-- <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button> -->
+            <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 (Copy & Change Image/Text Later) -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="images/products3.webp" alt="Laptop">
+      </div>
+      <div class="product-body">
+        <p class="category">ACCESSORIES</p>
+        <h3>Wireless Headset</h3>
+        <div class="price">
+          <span class="new-price">$660.00</span>
+          <span class="old-price">$799.00</span>
+        </div>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="product-actions">
+        <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+        <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+      </div>
+      <div class="add-to-cart">
+        <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="images/products.webp" alt="Laptop">
+      </div>
+      <div class="product-body">
+        <p class="category">ACCESSORIES</p>
+        <h3>Wireless Headset</h3>
+        <div class="price">
+          <span class="new-price">$660.00</span>
+          <span class="old-price">$799.00</span>
+        </div>
+        <div class="rating">★★★★★</div>
+      </div>
+      <div class="product-actions">
+        <a href="#" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a href="#" title="Compare"><i class="fa-solid fa-right-left"></i></a>
+        <a href="#" title="Quick View"><i class="fa-regular fa-eye"></i></a>
+      </div>
+      <div class="add-to-cart">
+        <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <script>
+function toggleCart(btn){
+  let card = btn.closest('.product-card');
+  card.classList.toggle('show-cart');
+}
+</script>
+
+<script>
+
+
+let arr = [
+  { name: "Laptop", category: "Laptops", element: document.querySelectorAll(".product-card")[0] },
+  { name: "Headset", category: "Accessories", element: document.querySelectorAll(".product-card")[1] },
+  { name: "Camera", category: "Cameras", element: document.querySelectorAll(".product-card")[2] }
+];
+
+select.addEventListener("change", function() {
+  let selectedCategory = select.value;   // current value
+  
+  for (let i = 0; i < arr.length; i++) {
+    if (selectedCategory === "All Categories" || arr[i].category === selectedCategory) {
+      arr[i].element.style.display = "block"; // show
+    } else {
+      arr[i].element.style.display = "none";  // hide
+    }
+  }
+});
+
+
+
+
+</script>
+
+
+
+
+
+<!-- ✅ FOOTER SAME AS OTHER PAGES -->
+<!-- or paste your footer HTML -->
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    let searchbar = document.querySelector(".category-select");
+
+    searchbar.addEventListener("change", function() {
+        let search = searchbar.value;
+        console.log(search);
+
+        fetch("/electro-Template/php/admin/category.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `categories=${encodeURIComponent(search)}`
+        })
+        .then(res => res.json()) // yahan res ko use karo
+        .then(data => {
+            console.log(data); // server ka response
+        })
+        .catch(err => console.error(err));
+
+        data.forEach(product =>  {
+
+            document.createElement("div");
+
+        });
+
+
+    });
+
+
+    
+
+});
+
+</script>
+
+
+
+
+<!-- 
+<script>
+  // helper: clone slides until count >= target (keeps loop smooth)
+  (function ensureSlidesCount(target = 8){
+    const wrapper = document.querySelector('.product-slider .swiper-wrapper');
+    if(!wrapper) 
+    return;
+    const slides = Array.from(wrapper.children);
+    let count = slides.length;
+    
+    if(count >= target) 
+    return;
+    // clone in sequence until target reached
+    let i = 0;
+    while(count < target){
+      const clone = slides[i % slides.length].cloneNode(true);
+      wrapper.appendChild(clone);
+      i++; count++;
+    }
+
+  })(8);
+
+  // init swiper AFTER possible cloning
+  const swiper = new Swiper('.product-slider', {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    loop: true,
+    speed: 600,
+    watchOverflow: true,    // disables navigation if not needed
+    grabCursor: true,
+    centeredSlides: false,
+    autoplay: {
+      delay: 2400,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+    navigation: {
+      nextEl: '.slick-next',
+      prevEl: '.slick-prev'
+    },
+    keyboard: { enabled: true, onlyInViewport: true },
+    breakpoints: {
+      1400: { slidesPerView: 4, spaceBetween: 28 },
+      1280: { slidesPerView: 4, spaceBetween: 28 }, // keeps 4 on 1280
+      1024: { slidesPerView: 3, spaceBetween: 22 },
+      768:  { slidesPerView: 2, spaceBetween: 18 },
+      0:    { slidesPerView: 1, spaceBetween: 12 }
+    },
+    on: {
+      init() { /* prevents transient jump on some devices */ },
+      resize() { /* nothing special, but keeps responsive */ }
+    }
+  });
+
+  
+</script>  -->
+
+
